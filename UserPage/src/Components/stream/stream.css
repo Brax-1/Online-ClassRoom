@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Otomanopee One', sans-serif;
+    
+}
+body{
+    background: rgb(62, 62, 62);
+}
+.back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.top{
+    width: 100%;
+    height: 8%;
+    background: rgb(34, 31, 31);
+}
+#username{
+    color: rgb(224, 223, 223);
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+}
+.details{
+    flex: 0.9;
+    margin-left: 50px;
+}
+.logout_left{
+    flex: 0.22;
+    justify-content: center;
+    display: flex;
+}
+#logout{
+    background: none;
+    color: rgb(235, 68, 68);
+    border: none;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.current{
+    display: flex;
+    flex-direction: row;
+}
+.upcoming{
+    display: flex;
+    flex-direction: row;
+}
+.resouces{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.card:active{
+    transform: scale(0.95);
+}
+.status{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 21px;
+    margin-top: 10px;
+}
+#vedioimg{
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: -5px;
+}
+#forward{
+    flex: 1;
+    width: 100.7%;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    color: black;
+    background: white;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#forward:hover{
+    background-color: rgb(210, 27, 251);
+    color: aliceblue;
+}
+#forward:active{
+    background-color: rgb(132, 17, 255);
+}
+.feature{
+    display: flex;
+    width: 100.7%;
+}
+#gap{
+    flex: 0.0099;
+}
+.vedioStream{
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    margin-bottom: 10px;
+}
+video{
+    width: 300px;
+    height: 226px;
+}

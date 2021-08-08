@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+#error{
+    display: flex;
+    justify-content: center;
+    color: rgb(174, 0, 0);
+    font-weight: 700;
+    text-align: center;
+    width: 130%;
+    margin-bottom: 20px;
+    margin-left: -46px;
+}
+.login_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   
+}
+#loginform{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 50px;
+    border-radius:2px ;
+    background: linear-gradient(-45deg, rgb(214, 7, 194),rgb(206, 12, 240),rgb(206, 12, 240));
+}
+#heading{
+    color: white;
+    margin-bottom: -7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.input{
+    padding: 10px;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 5px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius:2px ;
+    background: rgba(255, 254, 255, 0.353);
+    
+}
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(250, 206, 61);
+}
+button{
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 800;
+    color: rgb(211, 37, 250);
+    padding-top: 8px;
+    border: none;
+    width: 100%;
+    background: rgb(0, 221, 169);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius:2px ;
+}
+button:hover{
+    transform: scale(1.05);
+    background: rgb(4, 255, 117);
+}
+button:active{
+    transform: scale(0.9);
+    background: rgb(84, 253, 160);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+#loader_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgb(24, 24, 24);
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+#loader{
+    width: 200px;
+    height: 200px;
+}
+
+#load{
+    position: absolute;
+    top: 101%;
+    left: 41%;
+}
+svg{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    animation: rotate 1.5s linear infinite;
+
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 5;
+    stroke: rgb(149, 40, 251);
+    transform: translate(5px, 5px);
+    stroke-linecap: round;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: animate 8s linear infinite;
+    
+}
+@keyframes animate{
+ 
+
+    0%, 25.01%, 50.01%, 75.01%{
+
+        stroke-dashoffset: 200;
+    }
+    12.5%, 37.51%, 62.51%, 87.51%{
+
+        stroke-dashoffset: 0;
+    }
+    12.51%, 37.511%, 62.511%, 87.511%{
+
+        stroke-dashoffset: 400;
+    }
+    25%,50%,75%,100%{
+
+        stroke-dashoffset: 200;
+    }
+    0%{
+        
+    stroke: rgb(149, 40, 251);
+    }
+    25.01%{
+
+        stroke: rgb(40, 251, 142);
+    }
+    50.01%{
+
+        stroke: rgb(251, 202, 40);
+    }
+    75.01%{
+        
+    stroke: rgb(251, 89, 40);
+    }
+
+}
+
+.main-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+#student{
+flex:0.1;
+}
+#teacher{
+flex:0.1;
+}
+#teach{
+        flex: 0.7;
+}
+.changer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+.changer span{
+    color: aquamarine;
+    font-weight: 700;
+    margin-left: 5px;
+    cursor: pointer;
+}

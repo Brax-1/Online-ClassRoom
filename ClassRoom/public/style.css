@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 10px;
+}
+.main {
+    height: 100vh;
+    display: flex;
+}
+.main_list_student{
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 2px;
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    background-color: #242324;
+    border-right: 3px solid #3D3D42;
+}
+video{
+    width: 100%;
+    object-fit: fill;
+}
+#list-student{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#newstudentjoined{
+    width: 100%;
+    margin-top: 3px;
+}
+.main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main__right {
+    flex: 0.2
+}
+
+.main__videos {
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+#video-grid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+ }
+#teacher{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
+ }
+
+
+.main__controls {
+    color: #D2D2D2;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 27%;
+}
+
+.main__controls__block {
+    display: flex;
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.main__controls__button i {
+    font-size: 24px;
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    background: #242324;
+    border-left: 3px solid #3D3D42;
+}
+
+.main__header {
+    padding-top: 5px;
+    color: #F5F5F5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main__chat_window {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 13px;
+    padding-right: 1px;
+}
+#chat{
+    font-size: 12px;
+}
+heading{
+    font-size: 7px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+mes{
+    font-size: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.messages {
+    color: white;
+    list-style: none;
+    padding: 12px;
+    border-left: 2px solid white;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+}
+.newmessage {
+    margin-bottom: 10px;
+    background: black;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    padding-right: 11px;
+    padding-top: 5px;
+}
+.main__message_container {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.main__message_container input {
+    flex-grow: 1;
+    border: none;
+    border-top: 2px solid #d2d2d2;
+    padding-top: 9px;
+    background: transparent;
+    color: #F5F5F5;
+    outline: none;
+}
+
+.leave_meeting {
+    color: #EB534B;
+}
+
+.unmute, .stop {
+    color: #CC3B33;
+}
+
+#mutebutton{
+    color: #D2D2D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stopbutton{
+    color: #D2D2D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#leavebutton{
+    background-color:rgb(214, 214, 214);
+    color: rgb(238, 52, 27);
+    width: 45px;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+#leavebutton:hover{
+    transform: scale(1.2);
+    
+    color:rgb(214, 214, 214);
+    background: rgb(238, 52, 27);
+}
+.recorddownload{
+    position: absolute;
+    top: 11px;
+    LEFT: 10%;
+    color: #d2d2d2;
+    display: flex;
+}
+.main__download_button{
+    text-decoration: none;
+    color: black;
+    background: aliceblue;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.main__record_button{
+    text-decoration: none;
+    color: black;
+    background: aliceblue;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+#cover{
+    position: absolute;
+    width: 101px;
+    height: 100px;
+    background: transparent;
+    left: 188px;
+    z-index: 10;
+}
